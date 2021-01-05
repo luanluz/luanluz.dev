@@ -161,6 +161,6 @@ document.addEventListener('keyup', (event) => {
         submitButton.setAttribute('href', `mailto:luanluzdev@gmail.com?subject=${subjectValue}&body=${messageValue}`);
     } else {
         submitButton.classList.add('disabled');
-        submitButton.removeAttribute('href');
+        submitButton.setAttribute('href', '#');
     }
 });
