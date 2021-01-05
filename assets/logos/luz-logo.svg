@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="252.54" height="252.54" version="1.1" viewBox="0 0 66.81708 66.817084" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<metadata>
+		<RDF>
+			<Work rdf:about="">
+				<format>
+					image/svg+xml
+				</format>
+				<type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+				<title />
+			</Work>
+		</RDF>
+	</metadata>
+	<g>
+		<text x="15.463864" y="195.70406" font-family="sans-serif" font-size="10.583px" font-weight="bold" stroke-width=".26458" style="line-height:1.25" xml:space="preserve">
+			<tspan x="15.463864" y="195.70406" stroke-width=".26458" />
+		</text>
+		<path d="m39.561 27.959a10.578 10.578 0 0 1 4.3287 11.876 10.578 10.578 0 0 1 -10.143 7.5443 10.578 10.578 0 0 1 -10.13 -7.5614 10.578 10.578 0 0 1 4.3487 -11.869" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.9688" />
+		<path d="m29.249 23.047h8.4205" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.9844" />
+		<path d="m30.745 20.188h5.4283" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.9844" />
+		<path d="m31.794 17.329h3.3312" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.9844" />
+		<path d="m33.424 47.38h-21.243" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.9688" />
+		<path d="m29.262 47.38-18.206-8.3305" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.9688" />
+		<path d="m24.18 42.374-8.4157-12.115" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.9688" />
+		<rect x="1.9844" y="1.9844" width="62.848" height="62.848" fill="none" stroke="#FFF" stroke-linecap="square" stroke-linejoin="round" stroke-width="3.9688" />
+		<path d="m34.956 49.303h30.002v-9.5597l-19.632-6e-3s-0.68476 3.2776-2.4413 5.3362c-1.7566 2.0586-7.929 4.2298-7.929 4.2298z" fill="#FFF" />
+	</g>
+</svg>

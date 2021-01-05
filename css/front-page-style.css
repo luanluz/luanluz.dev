@@ -1,0 +1,198 @@
+/* ----------------- main ----------------- */
+main {
+  margin-top: 10.5rem;
+}
+
+/* ----------------- aside ----------------- */
+main aside[class*="col-"] {
+  padding: 0;
+}
+
+main aside nav {
+  display: flex;
+  flex-direction: column;
+}
+
+main aside nav a {
+  display: flex;
+  align-items: center;
+  font-size: var(--aside-font-size);
+  font-weight: var(--aside-font-weight);
+  padding: var(--button-padding);
+  margin: 1rem 0;
+  transition: background-color var(--short-transitions);
+}
+
+main aside nav a.active,
+main aside nav a:hover {
+  background-color: var(--secondary-color);
+}
+
+main aside nav a img {
+  margin-right: 1rem;
+}
+
+/*  ----------------- seção ----------------- */
+section[class*="col-"] {
+  min-height: 100vh;
+}
+
+/* ----------------- seção sobre-mim ----------------- */
+section#sobre-mim img.photo {
+  display: block;
+  max-height: 50rem;
+  margin: 0 auto;
+}
+
+/* -----------------  seção ferramentas----------------- */
+section#ferramentas div.card {
+  padding: 1.5rem;
+  min-height: 15rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--short-transitions);
+}
+
+section#ferramentas div.card img {
+  display: block;
+  margin: 1.5rem auto 0;
+  max-height: 7.5rem;
+}
+
+section#ferramentas div.card span {
+  font-size: var(--paragraph-font-size);
+  font-weight: bold;
+  text-align: center;
+  line-height: var(--paragraph-font-line-heigth);
+  text-transform: uppercase;
+}
+
+/* -----------------  seção portfolio----------------- */
+section#portfolio a.card {
+  padding: 1.5rem;
+  min-height: 20rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section#portfolio a.card:hover img {
+  filter: grayscale(0);
+}
+
+section#portfolio a.card img {
+  display: block;
+  margin: 2.5rem auto 0;
+  max-height: 7.5rem;
+  filter: grayscale(1);
+  transition: filter var(--half-second-transitions);
+}
+
+section#portfolio a.card span {
+  font-size: var(--paragraph-font-size);
+  font-weight: bold;
+  text-align: center;
+  line-height: var(--paragraph-font-line-heigth);
+}
+
+/* -----------------  seção contato----------------- */
+section#contato div.form {
+  margin-top: var(--space-between-sections-contents);
+  margin-bottom: var(--space-between-sections-contents);
+}
+
+section#contato div.form label {
+  font-size: var(--paragraph-font-size);
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  padding: var(--button-padding);
+  display: flex;
+  border-radius: var(--border-radius);
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+section#contato div.form label.message {
+  flex-direction: column;
+}
+
+section#contato div.form label input,
+section#contato div.form label textarea {
+  margin-left: 0.75rem;
+  color: var(--white-color);
+  font-weight: bold;
+  width: 100%;
+}
+
+section#contato div.form label textarea {
+  margin-left: 0;
+  margin-top: 0.75rem;
+}
+
+section#contato div.form a {
+  font-size: var(--paragraph-font-size);
+  width: 100%;
+  transition: var(--short-transitions);
+}
+
+section#contato div.form a.disabled {
+  cursor: not-allowed;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+
+/* ----------------- media query ----------------- */
+@media screen and (max-width: 960px) {}
+
+@media screen and (max-width: 720px) {
+
+  /* main */
+  main {
+    margin-top: 7.5rem;
+  }
+
+  /* aside */
+  main aside[class*="col-"] {
+    display: none;
+  }
+
+  /* ferramentas */
+  section#ferramentas .content .col-xl-6 {
+    padding: 0.5rem;
+  }
+
+  section#ferramentas div.card {
+    padding: 1rem;
+    min-height: 10rem;
+  }
+
+  section#ferramentas div.card img {
+    margin: 1rem auto 0;
+    max-height: 3.5rem;
+  }
+
+  /* portfolio */
+  section#portfolio .content .col-xl-6 {
+    padding: 0.5rem;
+  }
+
+  section#portfolio a.card {
+    padding: 1rem;
+    min-height: 10rem;
+    justify-content: center;
+  }
+
+  section#portfolio a.card img {
+    margin: 1rem auto 0;
+    max-height: 6.5rem;
+  }
+
+  section#portfolio a.card span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {}
