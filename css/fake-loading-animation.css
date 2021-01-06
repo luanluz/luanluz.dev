@@ -1,0 +1,371 @@
+/* ----------------- div.fake-loading-animation ----------------- */
+div.fake-loading-animation {
+    top: 0;
+    z-index: 1005;
+    position: fixed;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    animation: remove-loading 3s ease-in forwards;
+}
+
+/* ----------------- div.fake-loading-animation svg ----------------- */
+div.fake-loading-animation svg {
+    max-width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+
+/* ----------------- paths ----------------- */
+#l-luan,
+#l-luz {
+    opacity: 0;
+    stroke-dasharray: 20;
+    stroke-dashoffset: 0;
+    animation: animate-l 0.3s ease-in forwards;
+}
+
+#u-first-luan,
+#u-first-luz {
+    opacity: 0;
+    stroke-dasharray: 7;
+    stroke-dashoffset: 0;
+    animation: animate-u-first 0.2s ease-in forwards;
+}
+
+#u-second-luan,
+#u-second-luz {
+    opacity: 0;
+    stroke-dasharray: 17;
+    stroke-dashoffset: 0;
+    animation: animate-u-second 0.2s ease-in forwards;
+    animation-delay: 0.2s;
+}
+
+#u-third-luan,
+#u-third-luz {
+    opacity: 0;
+    stroke-dasharray: 7;
+    stroke-dashoffset: 0;
+    animation: animate-u-third 0.1s ease-in forwards;
+    animation-delay: 0.4s;
+}
+
+#a-first-luan {
+    opacity: 0;
+    stroke-dasharray: 37;
+    stroke-dashoffset: 0;
+    animation: animate-a-first-luan 0.3s ease-in forwards;
+}
+
+#a-second-luan {
+    opacity: 0;
+    stroke-dasharray: 6;
+    stroke-dashoffset: 0;
+    animation: animate-a-second-luan 0.2s ease-in forwards;
+    animation-delay: 0.2s;
+}
+
+#n-first-luan {
+    opacity: 0;
+    stroke-dasharray: 6;
+    stroke-dashoffset: 0;
+    animation: animate-n-first-luan 0.15s ease-in forwards;
+}
+
+#n-second-luan {
+    opacity: 0;
+    stroke-dasharray: 7;
+    stroke-dashoffset: 0;
+    animation: animate-n-second-luan 0.2s ease-in forwards;
+    animation-delay: 0.1s;
+}
+
+#n-third-luan {
+    opacity: 0;
+    stroke-dasharray: 16;
+    stroke-dashoffset: 0;
+    animation: animate-n-third-luan 0.2s ease-in forwards;
+    animation-delay: 0.1s;
+}
+
+#n-fourth-luan {
+    opacity: 0;
+    stroke-dasharray: 7;
+    stroke-dashoffset: 0;
+    animation: animate-n-fourth-luan 0.2s ease-in forwards;
+    animation-delay: 0.3s;
+}
+
+#z-luz {
+    opacity: 0;
+    stroke-dasharray: 30;
+    stroke-dashoffset: 0;
+    animation: animate-z-luz 0.5s ease-in forwards;
+}
+
+#dot {
+    opacity: 0;
+    animation: animate-dot 0.2s ease-in forwards;
+    animation-delay: 0.4s;
+}
+
+#d-first-dev {
+    opacity: 0;
+    stroke-dasharray: 14;
+    stroke-dashoffset: 0;
+    animation: animate-d-first-dev 0.2s ease-in forwards;
+}
+
+#d-second-dev {
+    opacity: 0;
+    stroke-dasharray: 36;
+    stroke-dashoffset: 0;
+    animation: animate-d-second-dev 0.3s ease-in forwards;
+    animation-delay: 0.2s;
+}
+
+#e-first-dev {
+    opacity: 0;
+    stroke-dasharray: 30;
+    stroke-dashoffset: 0;
+    animation: animate-e-first-dev 0.3s ease-in forwards;
+}
+
+#e-second-dev {
+    opacity: 0;
+    stroke-dasharray: 11;
+    stroke-dashoffset: 0;
+    animation: animate-e-second-dev 0.3s ease-in forwards;
+    animation-delay: 0.3s;
+}
+
+#v-dev {
+    opacity: 0;
+    stroke-dasharray: 26;
+    stroke-dashoffset: 0;
+    animation: animate-v-dev 0.5s ease-in forwards;
+}
+
+/* ----------------- animations ----------------- */
+@keyframes animate-l {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: -20;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-u-first {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: -7;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-u-second {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: -17;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-u-third {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 7;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-a-first-luan {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 37;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-a-second-luan {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: -6;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-n-first-luan {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 6;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-n-second-luan {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 7;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-n-third-luan {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 15;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-n-fourth-luan {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 7;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-z-luz {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 30;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-dot {
+    0% {
+        opacity: 1;
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes animate-d-first-dev {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: -14;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-d-second-dev {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 36;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-e-first-dev {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 30;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-e-second-dev {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 11;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-v-dev {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 26;
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes remove-loading {
+    0% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
