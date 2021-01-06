@@ -164,3 +164,13 @@ document.addEventListener('keyup', (event) => {
         submitButton.setAttribute('href', '#');
     }
 });
+
+
+/**
+ * ----------------------------------------------------------
+ * Instrução para remover a animação de carregamento falso
+ * ----------------------------------------------------------
+ */
+setTimeout(() => {
+    document.querySelector('div.fake-loading-animation').style.display = 'none';
+}, 3100);
