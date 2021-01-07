@@ -111,8 +111,8 @@ section#contato div.form label {
   padding: var(--button-padding);
   display: flex;
   border-radius: var(--border-radius);
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 section#contato div.form label.message {
@@ -141,7 +141,9 @@ section#contato div.form a {
 section#contato div.form a.disabled {
   cursor: not-allowed;
   color: var(--white-color);
-  background-color: var(--secondary-color);
+  background-color: transparent;
+  opacity: 0.5;
+  border: solid 0.15rem;
 }
 
 /* ----------------- media query ----------------- */
