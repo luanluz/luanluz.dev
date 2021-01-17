@@ -320,6 +320,10 @@ header.main-header .content-site .bottom-action img {
   max-height: 1.5rem;
 }
 
+header.main-header .content-site .bottom-action img:last-child {
+  margin-left: 0.75rem;
+}
+
 /* ----------------------- estilos do modal ----------------------- */
 .modal-content {
   display: none;
