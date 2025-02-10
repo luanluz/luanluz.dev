@@ -1,5 +1,5 @@
-/* ----------------- div.fake-loading-animation ----------------- */
-div.fake-loading-animation {
+/* ----------------- div.splash-screen ----------------- */
+div.splash-screen {
     top: 0;
     z-index: 1005;
     position: fixed;
@@ -12,8 +12,8 @@ div.fake-loading-animation {
     animation: remove-loading 3s ease-in forwards;
 }
 
-/* ----------------- div.fake-loading-animation svg ----------------- */
-div.fake-loading-animation svg {
+/* ----------------- div.splash-screen svg ----------------- */
+div.splash-screen svg {
     max-width: 100%;
     height: auto;
     padding: 2rem;
