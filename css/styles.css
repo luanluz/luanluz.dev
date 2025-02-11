@@ -205,11 +205,6 @@ main section .luz-logo {
   max-height: 4.5rem;
 }
 
-main section .luanluzdev {
-  max-height: 1.5rem;
-  margin-right: 0.5rem;
-}
-
 main section .links {
   display: flex;
   align-items: center;
@@ -254,7 +249,7 @@ main section .links a img[alt="LinkedIn"] {
   position: relative;
   display: inline-block;
   width: 60px;
-  height: 34px;
+  height: 2.125rem;
 }
 
 .switch input {
@@ -272,17 +267,17 @@ main section .links a img[alt="LinkedIn"] {
   bottom: 0;
   background-color: #ccc;
   transition: 0.4s;
-  border-radius: 34px;
+  border-radius: 2.125rem;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 1.625rem;
+  width: 1.625rem;
   border-radius: 50%;
-  left: 4px;
-  bottom: 4px;
+  left: 0.25rem;
+  bottom: 0.25rem;
   background-color: white;
   transition: 0.4s;
 }
@@ -292,12 +287,21 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+  transform: translateX(1.625rem);
 }
 
 footer {
   position: absolute;
   bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer .luanluzdev {
+  display: block;
+  max-height: 0.85rem;
+  margin: 0 auto;
 }
 
 footer address {
@@ -305,10 +309,11 @@ footer address {
   justify-content: center;
   align-items: center;
   font-style: normal;
+  font-size: 0.85rem;
 }
 
 footer address img {
-  max-height: 1.25rem;
+  max-height: 1rem;
   margin-right: 0.25rem;
 }
 
@@ -326,5 +331,7 @@ footer address img {
 @media screen and (max-width: 480px) {
   main section .links {
     gap: 1.25rem;
+    flex-direction: column;
+    align-items: start;
   }
 }
