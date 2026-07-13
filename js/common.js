@@ -17,5 +17,5 @@ export function pick(arr) {
 }
 
 export function iconSrc(id) {
-  return IC[id] || 'assets/icons/about.png';
+  return IC[id] || 'assets/icons/about.webp';
 }

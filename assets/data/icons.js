@@ -1,12 +1,12 @@
 /** App id → icon path */
 export const IC = {
-      sobre: 'assets/icons/about.png',
-      skills: 'assets/icons/skills.png',
-      exp: 'assets/icons/career.png',
-      edu: 'assets/icons/education.png',
-      lang: 'assets/icons/languages.png',
-      contato: 'assets/icons/contact.png',
-      github: 'assets/icons/github.png',
-      linkedin: 'assets/icons/linkedin.png',
-      cv: 'assets/icons/resume.png'
+      sobre: 'assets/icons/about.webp',
+      skills: 'assets/icons/skills.webp',
+      exp: 'assets/icons/career.webp',
+      edu: 'assets/icons/education.webp',
+      lang: 'assets/icons/languages.webp',
+      contato: 'assets/icons/contact.webp',
+      github: 'assets/icons/github.webp',
+      linkedin: 'assets/icons/linkedin.webp',
+      cv: 'assets/icons/resume.webp'
     };
