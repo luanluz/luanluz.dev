@@ -77,7 +77,8 @@ body.dark .theme-btn {
 .main {
   position: relative;
   z-index: 1;
-  min-height: 100vh;
+  min-height: 100%;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -86,7 +87,7 @@ body.dark .theme-btn {
   padding: 56px 20px 380px;
   opacity: 0;
   animation: contentReveal .75s cubic-bezier(0.22, 1, 0.36, 1) 1.25s both;
-  overflow-x: clip;
+  overflow: hidden;
   box-sizing: border-box
 }
 
@@ -98,9 +99,9 @@ body.dark .theme-btn {
 
 .main:has(.card) {
   z-index: 1;
-  height: 100vh;
-  min-height: 100vh;
-  max-height: 100vh;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
   justify-content: flex-start;
   align-items: center;
   padding: 88px 24px 0;

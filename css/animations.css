@@ -43,14 +43,3 @@
     transform: none
   }
 }
-
-  50% {
-    transform: translateY(5px)
-  }
-}
-
-  to {
-    opacity: 1;
-    transform: none
-  }
-}

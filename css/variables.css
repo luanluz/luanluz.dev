@@ -59,15 +59,16 @@ body.dark {
 html,
 body {
   margin: 0;
-  padding: 0
+  padding: 0;
+  height: 100%;
+  overflow: hidden
 }
 
 body {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   background: var(--bg);
   color: var(--ink);
-  min-height: 100vh;
+  min-height: 100%;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
   transition: background .55s ease, color .3s;
 }
