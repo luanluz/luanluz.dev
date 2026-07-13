@@ -16,15 +16,18 @@ export function fitHeroTitle() {
   var spans = el.querySelectorAll('.hero-line');
   if (!spans.length) return;
 
-  el.style.width = '100%';
-  el.style.maxWidth = '100%';
-  el.style.marginLeft = '0';
-  el.style.marginRight = '0';
+  var maxTrack = 1920;
+  var gutter = 40;
+  var available = Math.min(window.innerWidth - gutter, maxTrack);
+
+  el.style.width = available + 'px';
+  el.style.maxWidth = maxTrack + 'px';
+  el.style.marginLeft = 'auto';
+  el.style.marginRight = 'auto';
   el.style.height = 'auto';
   el.style.fontSize = '';
 
-  var maxW = el.clientWidth;
-  if (!maxW) maxW = Math.min(window.innerWidth - 40, 1920);
+  var maxW = available;
   var cs = getComputedStyle(el);
 
   function textWidth(span) {
