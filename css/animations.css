@@ -1,0 +1,56 @@
+@keyframes phoneRise {
+  from {
+    transform: translateX(-50%) translateY(115%) scale(var(--phone-scale));
+    opacity: 0
+  }
+
+  to {
+    transform: translateX(-50%) translateY(var(--phone-slide, 0%)) scale(var(--phone-scale));
+    opacity: 1
+  }
+}
+
+@keyframes phoneTilt {
+  from {
+    transform: perspective(1600px) rotateX(0deg)
+  }
+
+  to {
+    transform: perspective(1600px) rotateX(20deg)
+  }
+}
+
+@keyframes contentReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px)
+  }
+
+  to {
+    opacity: 1;
+    transform: none
+  }
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(.99)
+  }
+
+  to {
+    opacity: 1;
+    transform: none
+  }
+}
+
+  50% {
+    transform: translateY(5px)
+  }
+}
+
+  to {
+    opacity: 1;
+    transform: none
+  }
+}

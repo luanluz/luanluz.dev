@@ -1,0 +1,143 @@
+/* contacts app */
+.contacts-app {
+  width: 100%;
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+.contacts-letter {
+  font: 600 13px/1 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: .04em;
+  color: #999;
+  padding: 4px 4px 10px
+}
+
+body.dark .contacts-letter {
+  color: rgba(255, 255, 255, 0.4)
+}
+
+.contacts-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 12px 4px;
+  border-radius: 0;
+  background: transparent;
+  box-sizing: border-box
+}
+
+.contacts-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 700 18px/1 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -.02em;
+  color: #fff;
+  user-select: none
+}
+
+.contacts-avatar.tone-violet { background: #BF5AF2 }
+.contacts-avatar.tone-blue { background: #64D2FF; color: #0a3a4d }
+.contacts-avatar.tone-green { background: #30D158 }
+.contacts-avatar.tone-orange { background: #FC6D26 }
+.contacts-avatar.tone-sky { background: #2AABEE }
+.contacts-avatar.tone-discord { background: #5865F2 }
+.contacts-avatar.tone-github { background: #24292f }
+
+.contacts-meta {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px
+}
+
+.contacts-name {
+  font: 700 16px/1.25 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -.015em;
+  color: #111
+}
+
+body.dark .contacts-name {
+  color: var(--bg-title)
+}
+
+.contacts-detail {
+  font: 500 13.5px/1.35 'Plus Jakarta Sans', sans-serif;
+  color: #888;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+body.dark .contacts-detail {
+  color: rgba(255, 255, 255, 0.5)
+}
+
+.contacts-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none
+}
+
+.contacts-act {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+  transition: transform .14s ease;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 17px
+}
+
+.contacts-act:hover {
+  transform: translateY(-1px) scale(1.04)
+}
+
+.contacts-act:active {
+  transform: scale(.94)
+}
+
+.contacts-act.act-mail,
+.contacts-act.act-map,
+.contacts-act.act-open {
+  background: #9B3AD4;
+  color: #fff
+}
+
+.contacts-act.act-copy {
+  background: color-mix(in srgb, #BF5AF2 28%, #fff 72%);
+  color: #6B1FA0
+}
+
+body.dark .contacts-act.act-mail,
+body.dark .contacts-act.act-map,
+body.dark .contacts-act.act-open {
+  background: #BF5AF2;
+  color: #140A1C
+}
+
+body.dark .contacts-act.act-copy {
+  background: color-mix(in srgb, #BF5AF2 28%, var(--bg) 72%);
+  color: #E0B0FF
+}

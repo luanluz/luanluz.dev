@@ -1,0 +1,58 @@
+.card-body:has(> .group) {
+  gap: 68px
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%
+}
+
+.group-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font: 700 13px/1.2 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #374151
+}
+
+body.dark .group-label {
+  color: rgba(255, 255, 255, 0.78)
+}
+
+.group-label i {
+  font-size: 16px;
+  line-height: 1;
+  color: #0f766e
+}
+
+body.dark .group-label i {
+  color: #5EEAD4
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 14px 16px
+}
+
+.chip {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #dceee3;
+  border: none;
+  color: #1f2937;
+  font: 600 13px 'Plus Jakarta Sans', sans-serif;
+  white-space: nowrap
+}
+
+body.dark .chip {
+  background: color-mix(in srgb, #30D158 16%, var(--bg) 84%);
+  border: none;
+  color: rgba(255, 255, 255, 0.88)
+}

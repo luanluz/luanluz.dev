@@ -1,0 +1,77 @@
+.lang-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 42rem;
+  gap: 0
+}
+
+.lrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+  border-radius: 0;
+  background: transparent;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08)
+}
+
+.lrow:last-child {
+  border-bottom: none;
+  padding-bottom: 4px
+}
+
+.lrow .n {
+  font: 700 clamp(18px, 2.2vw, 24px)/1.2 'Plus Jakarta Sans', sans-serif;
+  color: #111;
+  letter-spacing: -.02em;
+  min-width: 0
+}
+
+body.dark .lrow .n {
+  color: var(--bg-title)
+}
+
+body.dark .lrow {
+  border-bottom-color: rgba(255, 255, 255, 0.1)
+}
+
+.lrow .lv {
+  font: 500 14px/1.35 'Plus Jakarta Sans', sans-serif;
+  color: #666;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  flex: none;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+  text-align: right
+}
+
+.lrow .lv-chip {
+  font: 500 12px/1.2 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: .01em;
+  color: #444;
+  background: color-mix(in srgb, var(--bg) 86%, #000 14%);
+  border-radius: 999px;
+  padding: 6px 11px;
+  white-space: nowrap;
+  text-align: center
+}
+
+body.dark .lrow .lv-chip {
+  color: rgba(255, 255, 255, 0.78);
+  background: color-mix(in srgb, var(--bg) 62%, #fff 38%)
+}
+
+body.dark .lrow .lv:not(.lv-chip) {
+  color: var(--faint);
+  border: none
+}

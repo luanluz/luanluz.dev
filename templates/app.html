@@ -1,0 +1,273 @@
+<template id="tpl-hero">
+  <div class="hero">
+    <h1 class="hero-title" id="hero-title">
+      <span class="hero-line hero-line-1" data-line="1"></span>
+      <span class="hero-line hero-line-2" data-line="2"></span>
+    </h1>
+  </div>
+</template>
+
+<template id="tpl-card">
+  <div class="card">
+    <aside class="card-aside">
+      <h2 class="card-title"></h2>
+      <button type="button" class="card-close" data-go-home aria-label="fechar">
+        <i class="ph ph-x" aria-hidden="true"></i>
+      </button>
+    </aside>
+    <div class="card-main">
+      <div class="card-body"></div>
+    </div>
+  </div>
+</template>
+
+<template id="tpl-tile">
+  <div class="tile-wrap">
+    <button type="button" class="tile" data-id="">
+      <img class="tile-icon" src="" alt="" draggable="false">
+    </button>
+    <span class="tile-label"></span>
+  </div>
+</template>
+
+<template id="tpl-tile-badge">
+  <span class="badge"></span>
+</template>
+
+<template id="tpl-about">
+  <div class="about-profile">
+    <div class="about-cover" aria-hidden="true"></div>
+    <div class="about-head">
+      <div class="about-avatar-wrap">
+        <img class="about-avatar" src="" alt="">
+        <span class="about-online" title=""></span>
+      </div>
+      <div class="about-quick">
+        <a class="about-link-github" href="#" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="ph ph-github-logo" aria-hidden="true"></i>
+        </a>
+        <a class="about-link-linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="ph ph-linkedin-logo" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="about-identity">
+      <div class="about-name-row">
+        <h3 class="about-name"></h3>
+        <i class="ph-fill ph-seal-check about-verified" aria-hidden="true"></i>
+      </div>
+      <p class="about-handle"></p>
+      <p class="about-bio"></p>
+    </div>
+    <div class="about-meta">
+      <span class="about-meta-item">
+        <i class="ph ph-map-pin" aria-hidden="true"></i>
+        <span class="about-location"></span>
+      </span>
+      <span class="about-meta-item">
+        <i class="ph ph-circle" aria-hidden="true" style="color:#30D158"></i>
+        <span class="about-available"></span>
+      </span>
+    </div>
+    <div class="about-stats">
+      <div class="about-stat">
+        <span class="about-stat-value about-years"></span>
+        <span class="about-stat-label about-years-label"></span>
+      </div>
+      <div class="about-stat">
+        <span class="about-stat-value about-focus"></span>
+        <span class="about-stat-label about-focus-label"></span>
+      </div>
+      <div class="about-stat">
+        <span class="about-stat-value about-stack"></span>
+        <span class="about-stat-label about-stack-label"></span>
+      </div>
+    </div>
+    <div class="about-actions">
+      <button type="button" class="about-action is-ghost" data-open-app="contato">
+        <i class="ph ph-chat-circle" aria-hidden="true"></i>
+        <span class="about-contact-label"></span>
+      </button>
+      <a class="about-action is-solid about-github-cta" href="#" target="_blank" rel="noopener">
+        <i class="ph ph-github-logo" aria-hidden="true"></i>
+        <span class="about-github-label"></span>
+      </a>
+    </div>
+    <div class="about-block about-tags-block">
+      <h4 class="about-block-title about-tags-title"></h4>
+      <div class="about-tags"></div>
+    </div>
+    <div class="about-block about-more-block">
+      <h4 class="about-block-title about-more-title"></h4>
+      <p class="about-text"></p>
+    </div>
+  </div>
+</template>
+
+<template id="tpl-about-tag">
+  <span class="about-tag"></span>
+</template>
+
+<template id="tpl-skill-group">
+  <div class="group">
+    <div class="group-label">
+      <i class="ph" aria-hidden="true"></i>
+      <span class="group-label-text"></span>
+    </div>
+    <div class="chips"></div>
+  </div>
+</template>
+
+<template id="tpl-skill-chip">
+  <span class="chip"></span>
+</template>
+
+<template id="tpl-career-home">
+  <div class="career-home"></div>
+</template>
+
+<template id="tpl-career-job">
+  <article class="career-job" role="button" tabindex="0" aria-expanded="false">
+    <div class="career-job-main">
+      <div class="career-job-head">
+        <div class="career-job-title"></div>
+        <span class="career-job-badge"></span>
+      </div>
+      <div class="career-job-org"></div>
+    </div>
+    <div class="career-job-foot">
+      <div class="career-job-facts"></div>
+      <span class="career-job-cta">
+        <span class="career-job-cta-label"></span>
+        <i class="ph ph-caret-down" aria-hidden="true"></i>
+      </span>
+    </div>
+    <div class="career-job-details">
+      <ul></ul>
+    </div>
+  </article>
+</template>
+
+<template id="tpl-career-fact">
+  <span class="career-fact">
+    <i class="ph" aria-hidden="true"></i>
+    <span></span>
+  </span>
+</template>
+
+<template id="tpl-career-bullet">
+  <li></li>
+</template>
+
+<template id="tpl-study-home">
+  <div class="study-home">
+    <div class="study-awards"></div>
+    <div class="study-courses"></div>
+  </div>
+</template>
+
+<template id="tpl-study-award">
+  <article class="study-award">
+    <div class="study-award-body">
+      <div class="study-award-main">
+        <div class="study-award-icon" aria-hidden="true">
+          <i class="ph" aria-hidden="true"></i>
+        </div>
+        <div class="study-award-copy">
+          <div class="study-award-value"></div>
+          <div class="study-award-sub"></div>
+        </div>
+      </div>
+    </div>
+    <div class="study-award-foot"></div>
+  </article>
+</template>
+
+<template id="tpl-study-course">
+  <article class="study-course">
+    <div class="study-course-body">
+      <div class="study-course-title"></div>
+      <div class="study-course-school"></div>
+    </div>
+    <div class="study-course-foot">
+      <div class="study-course-facts"></div>
+    </div>
+  </article>
+</template>
+
+<template id="tpl-study-fact">
+  <span class="study-fact">
+    <i class="ph" aria-hidden="true"></i>
+    <span></span>
+  </span>
+</template>
+
+<template id="tpl-translate-app">
+  <div class="translate-app">
+    <div class="translate-bar">
+      <button type="button" class="translate-lang" data-side="from" id="translate-from-btn"></button>
+      <button type="button" class="translate-swap" id="translate-swap" aria-label="">
+        <i class="ph ph-arrows-left-right" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="translate-lang is-to" data-side="to" id="translate-to-btn"></button>
+    </div>
+    <div class="translate-panels">
+      <div class="translate-panel">
+        <div class="translate-panel-head">
+          <span class="translate-panel-label translate-from-label"></span>
+        </div>
+        <p class="translate-text" id="translate-src"></p>
+      </div>
+      <div class="translate-panel is-out">
+        <div class="translate-panel-head">
+          <span class="translate-panel-label translate-to-label"></span>
+          <span class="translate-level" id="translate-level"></span>
+        </div>
+        <p class="translate-text" id="translate-dst"></p>
+      </div>
+    </div>
+    <div class="lang-list"></div>
+  </div>
+</template>
+
+<template id="tpl-lang-row">
+  <div class="lrow">
+    <span class="n"></span>
+    <span class="lv lv-chip"></span>
+  </div>
+</template>
+
+<template id="tpl-contacts-app">
+  <div class="contacts-app">
+    <div class="contacts-list"></div>
+  </div>
+</template>
+
+<template id="tpl-contacts-group">
+  <div class="contacts-group">
+    <div class="contacts-letter"></div>
+  </div>
+</template>
+
+<template id="tpl-contacts-row">
+  <div class="contacts-row">
+    <div class="contacts-avatar"></div>
+    <div class="contacts-meta">
+      <div class="contacts-name"></div>
+      <div class="contacts-detail"></div>
+    </div>
+    <div class="contacts-actions"></div>
+  </div>
+</template>
+
+<template id="tpl-contacts-act-open">
+  <a class="contacts-act" href="#" target="_blank" rel="noopener" aria-label="">
+    <i class="ph" aria-hidden="true"></i>
+  </a>
+</template>
+
+<template id="tpl-contacts-act-copy">
+  <button type="button" class="contacts-act act-copy" data-copy="" aria-label="copy">
+    <i class="ph ph-copy" aria-hidden="true"></i>
+  </button>
+</template>

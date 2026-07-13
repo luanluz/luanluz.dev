@@ -1,0 +1,131 @@
+.topbar {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  margin: 0 auto;
+  width: max-content;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  animation: contentReveal .7s cubic-bezier(0.22, 1, 0.36, 1) 1.2s both
+}
+
+.lang-toggle {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 999px
+}
+
+.lang-toggle button {
+  border: none;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font: 600 12.5px 'Plus Jakarta Sans', sans-serif;
+  background: transparent;
+  color: #111;
+  transition: all .15s
+}
+
+.lang-toggle button.on {
+  background: #111;
+  color: #fff
+}
+
+.theme-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111
+}
+
+.theme-btn i {
+  font-size: 18px;
+  line-height: 1
+}
+
+body.dark .lang-toggle {
+  background: rgba(255, 255, 255, 0.12)
+}
+
+body.dark .lang-toggle button {
+  color: rgba(255, 255, 255, 0.75)
+}
+
+body.dark .lang-toggle button.on {
+  background: #fff;
+  color: #111
+}
+
+body.dark .theme-btn {
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.85)
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 56px 20px 380px;
+  opacity: 0;
+  animation: contentReveal .75s cubic-bezier(0.22, 1, 0.36, 1) 1.25s both;
+  overflow-x: clip;
+  box-sizing: border-box
+}
+
+.main:has(.hero) {
+  padding: 0;
+  justify-content: center;
+  z-index: 1
+}
+
+.main:has(.card) {
+  z-index: 1;
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 88px 24px 0;
+  pointer-events: none;
+  box-sizing: border-box
+}
+
+.main:has(.card) #content {
+  height: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
+  align-items: stretch
+}
+
+.main:has(.card) .card {
+  pointer-events: auto;
+  height: 100%;
+  max-height: none;
+  flex: 1 1 auto
+}
+
+#content {
+  width: 100%;
+  max-width: 1920px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center
+}

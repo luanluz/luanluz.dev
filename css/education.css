@@ -1,0 +1,229 @@
+/* study home (education app) */
+.study-home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px
+}
+
+.study-awards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px
+}
+
+.study-award {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border-radius: 24px;
+  overflow: hidden
+}
+
+.study-award.is-star {
+  background: #fffdf9
+}
+
+body.dark .study-award.is-star {
+  background: color-mix(in srgb, #FF9F0A 5%, #000 95%)
+}
+
+.study-award.is-ira {
+  background: #f8fcf9
+}
+
+body.dark .study-award.is-ira {
+  background: color-mix(in srgb, #30D158 5%, #000 95%)
+}
+
+.study-award-body {
+  position: relative;
+  z-index: 1;
+  border-radius: 24px;
+  padding: 16px 16px 18px;
+  box-sizing: border-box
+}
+
+.study-award.is-star .study-award-body {
+  background: #f5dfc0;
+  color: #9a5b12
+}
+
+body.dark .study-award.is-star .study-award-body {
+  background: color-mix(in srgb, #FF9F0A 34%, var(--bg) 66%);
+  color: #FFD28A
+}
+
+.study-award.is-ira .study-award-body {
+  background: #d3e9db;
+  color: #1a6b3c
+}
+
+body.dark .study-award.is-ira .study-award-body {
+  background: color-mix(in srgb, #30D158 28%, var(--bg) 72%);
+  color: #B6ECC8
+}
+
+.study-award-main {
+  display: flex;
+  align-items: center;
+  gap: 12px
+}
+
+.study-award-icon {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, #fff 70%, transparent);
+  color: inherit;
+  font-size: 22px
+}
+
+body.dark .study-award-icon {
+  background: rgba(255, 255, 255, 0.08)
+}
+
+.study-award-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px
+}
+
+.study-award-value {
+  font: 700 clamp(18px, 2.4vw, 22px)/1.15 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -.03em
+}
+
+.study-award.is-ira .study-award-value {
+  font-size: clamp(26px, 3.6vw, 34px);
+  letter-spacing: -.045em;
+  line-height: .95
+}
+
+.study-award-sub {
+  font: 500 12.5px/1.3 'Plus Jakarta Sans', sans-serif;
+  opacity: .72
+}
+
+.study-award-foot {
+  padding: 12px 14px 12px;
+  text-align: center;
+  font: 600 12px/1.35 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -.01em;
+  box-sizing: border-box;
+  color: inherit
+}
+
+.study-award.is-star .study-award-foot {
+  color: #9a5b12
+}
+
+body.dark .study-award.is-star .study-award-foot {
+  color: #FFCC70
+}
+
+.study-award.is-ira .study-award-foot {
+  color: #1a6b3c
+}
+
+body.dark .study-award.is-ira .study-award-foot {
+  color: #9BE7B0
+}
+
+.study-courses {
+  display: flex;
+  flex-direction: column;
+  gap: 28px
+}
+
+.study-course {
+  position: relative;
+  border-radius: 0;
+  padding: 18px 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: transparent
+}
+
+body.dark .study-course {
+  background: transparent
+}
+
+.study-course-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0
+}
+
+.study-course-title {
+  font: 700 clamp(18px, 2vw, 22px)/1.25 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -.03em;
+  color: #0a0a0a;
+  min-width: 0
+}
+
+body.dark .study-course-title {
+  color: var(--bg-title)
+}
+
+.study-course-school {
+  font: 500 14px/1.45 'Plus Jakarta Sans', sans-serif;
+  color: #3f3f46
+}
+
+body.dark .study-course-school {
+  color: rgba(255, 255, 255, 0.72)
+}
+
+.study-course-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 16px
+}
+
+.study-course-facts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 18px;
+  min-width: 0
+}
+
+.study-fact {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font: 500 13px/1.2 'Plus Jakarta Sans', sans-serif;
+  color: #27272a;
+  min-width: 0
+}
+
+body.dark .study-fact {
+  color: rgba(255, 255, 255, 0.82)
+}
+
+.study-fact i {
+  flex: none;
+  font-size: 16px;
+  line-height: 1;
+  color: #52525b
+}
+
+body.dark .study-fact i {
+  color: rgba(255, 255, 255, 0.55)
+}
+
+@media (max-width: 640px) {
+  .study-awards {
+    grid-template-columns: 1fr
+  }
+}

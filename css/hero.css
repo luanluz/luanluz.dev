@@ -1,0 +1,70 @@
+/* hero */
+.hero {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 0;
+  width: 100%;
+  margin: 0;
+  padding: 112px 20px 0;
+  box-sizing: border-box;
+  pointer-events: none
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0;
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.045em;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  box-sizing: border-box;
+  pointer-events: auto;
+  gap: 0;
+  --hero-line-1-scale: 1;
+  --hero-line-2-scale: 1
+}
+
+body.dark .hero-title {
+  color: rgba(255, 255, 255, 0.1)
+}
+
+.hero-title .hero-line {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-align: center;
+  overflow: visible;
+  line-height: .9
+}
+
+/* ajuste fino por idioma (1 = 100% da largura) */
+body.lang-pt .hero-title {
+  --hero-line-1-scale: 1;
+  --hero-line-2-scale: 1
+}
+
+body.lang-en .hero-title {
+  --hero-line-1-scale: 1;
+  --hero-line-2-scale: 1
+}
+
+body.lang-es .hero-title {
+  --hero-line-1-scale: 1;
+  --hero-line-2-scale: 1
+}
