@@ -44,13 +44,16 @@ export function updateCardScrollFade() {
 export function updatePageBackground() {
   var dark = state.theme === 'dark';
   var home = dark ? '#000000' : '#f9f9f9';
+  var accent = dark ? '#a1a1aa' : '#6b7280';
   var bg = home;
   if (state.active) {
     var app = APPS.filter(function (a) { return a.id === state.active; })[0];
     if (app && app.pageBg) bg = dark ? app.pageBg.dark : app.pageBg.light;
+    if (app && app.pageAccent) accent = dark ? app.pageAccent.dark : app.pageAccent.light;
   }
   document.body.style.setProperty('--bg', bg);
   document.body.style.setProperty('--bg-fade', bg);
+  document.body.style.setProperty('--page-accent', accent);
 }
 
 export function renderContent() {

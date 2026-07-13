@@ -98,6 +98,8 @@ body.dark .card-close {
 }
 
 .card-body {
+  --scroll-thumb: color-mix(in srgb, var(--page-accent, #6b7280) 55%, transparent);
+  --scroll-thumb-hover: color-mix(in srgb, var(--page-accent, #6b7280) 78%, transparent);
   padding: 0 10px var(--card-safe-bottom);
   overflow-x: hidden;
   overflow-y: auto;
@@ -109,7 +111,26 @@ body.dark .card-close {
   align-items: stretch;
   gap: 22px;
   text-align: left;
-  box-sizing: border-box
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb) transparent
+}
+
+.card-body::-webkit-scrollbar {
+  width: 5px
+}
+
+.card-body::-webkit-scrollbar-track {
+  background: transparent
+}
+
+.card-body::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb);
+  border-radius: 999px
+}
+
+.card-body::-webkit-scrollbar-thumb:hover {
+  background: var(--scroll-thumb-hover)
 }
 
 .card-body.has-scroll {

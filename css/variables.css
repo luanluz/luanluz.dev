@@ -22,6 +22,7 @@
   --toggle: rgba(10, 75, 233, 0.08);
   --tilering: rgba(255, 255, 255, 0.9);
   --levelbg: rgba(10, 75, 233, 0.1);
+  --page-accent: #6b7280;
 }
 
 body.dark {
@@ -48,6 +49,7 @@ body.dark {
   --toggle: rgba(255, 255, 255, 0.1);
   --tilering: rgba(20, 20, 20, 0.92);
   --levelbg: rgba(255, 255, 255, 0.1);
+  --page-accent: #a1a1aa;
 }
 
 * {
